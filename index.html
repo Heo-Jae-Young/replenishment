@@ -246,9 +246,7 @@
       });
 
       function initMap() {
-        // 숙소 위치 좌표 (이 부분을 실제 숙소 좌표로 변경하세요)
-        const accommodationLocation = { lat: 37.5665, lng: 126.978 }; // 서울 시청 좌표 (예시)
-
+        const accommodationLocation = { lat: 37.290497, lng: 127.017775 };
         // 지도 생성
         const map = new google.maps.Map(document.getElementById("map"), {
           center: accommodationLocation,
@@ -309,7 +307,7 @@
     ></script>
 
     <!-- 구글 번역 위젯 -->
-    <div
+    <!-- <div
       id="google_translate_element"
       style="position: absolute; top: 20px; right: 20px"
     ></div>
@@ -329,6 +327,6 @@
     <script
       type="text/javascript"
       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
+    ></script> -->
   </body>
 </html>
