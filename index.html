@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>How to Find Our Accommodation | 숙소 찾아오는 길 | 宿泊施設への行き方 | 如何找到我们的住宿</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 구글 자동 번역 메타 태그 -->
+    <meta name="google" content="notranslate">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #37352f;
+        }
+        .container {
+            max-width: 100%;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+        .language-selector {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .language-btn {
+            padding: 8px 12px;
+            background-color: #f1f1f1;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .language-btn.active {
+            background-color: #2ea1ff;
+            color: white;
+            border-color: #2ea1ff;
+        }
+        .map-container {
+            height: 400px;
+            width: 100%;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        .directions {
+            margin-bottom: 24px;
+            padding: 16px;
+            background-color: #f7f6f3;
+            border-radius: 8px;
+        }
+        .directions h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 12px;
+        }
+        .directions ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        .directions li {
+            margin-bottom: 8px;
+        }
+        .contact {
+            font-size: 14px;
+            color: #64635f;
+        }
+        .language-content {
+            display: none;
+        }
+        .language-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button class="language-btn active" data-lang="en">English</button>
+            <button class="language-btn" data-lang="ko">한국어</button>
+            <button class="language-btn" data-lang="ja">日本語</button>
+            <button class="language-btn" data-lang="zh">中文</button>
+        </div>
+        
+        <div class="map-container">
+            <div id="map"></div>
+        </div>
+        
+        <!-- English Content -->
+        <div class="language-content active" id="content-en">
+            <h1>How to Find Our Accommodation</h1>
+            
+            <div class="directions">
+                <h2>By Public Transportation</h2>
+                <ul>
+                    <li>Subway: 5-minute walk from <strong>Exit #○</strong> of <strong>○○ Station</strong></li>
+                    <li>Bus: 3-minute walk from <strong>○○ Bus Stop</strong> (Bus numbers: ○○, ○○)</li>
+                </ul>
+            </div>
+            
+            <div class="directions">
+                <h2>By Car</h2>
+                <ul>
+                    <li>Enter <strong>"○○○ Accommodation"</strong> or address <strong>"123-45 ○○-dong, ○○-gu, Seoul"</strong> in your navigation</li>
+                    <li>Parking available in front of the accommodation (○○ won per night)</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <p>For inquiries: +82-10-1234-5678 (Accommodation Manager)</p>
+            </div>
+        </div>
+        
+        <!-- Korean Content -->
+        <div class="language-content" id="content-ko">
+            <h1>숙소 찾아오는 길</h1>
+            
+            <div class="directions">
+                <h2>대중교통 이용 시</h2>
+                <ul>
+                    <li>지하철: <strong>○○역</strong> ○번 출구에서 도보 5분</li>
+                    <li>버스: <strong>○○정류장</strong> 하차 후 도보 3분 (○○번, ○○번 버스)</li>
+                </ul>
+            </div>
+            
+            <div class="directions">
+                <h2>자가용 이용 시</h2>
+                <ul>
+                    <li>네비게이션에 <strong>"○○○ 숙소"</strong> 또는 주소 <strong>"서울시 ○○구 ○○동 123-45"</strong> 입력</li>
+                    <li>주차 공간은 숙소 앞 주차장 이용 가능 (1박 ○○원)</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <p>문의사항: 010-1234-5678 (숙소 관리자)</p>
+            </div>
+        </div>
+        
+        <!-- Japanese Content -->
+        <div class="language-content" id="content-ja">
+            <h1>宿泊施設への行き方</h1>
+            
+            <div class="directions">
+                <h2>公共交通機関をご利用の場合</h2>
+                <ul>
+                    <li>地下鉄: <strong>○○駅</strong>○番出口から徒歩5分</li>
+                    <li>バス: <strong>○○バス停</strong>下車後、徒歩3分（バス番号: ○○、○○）</li>
+                </ul>
+            </div>
+            
+            <div class="directions">
+                <h2>お車をご利用の場合</h2>
+                <ul>
+                    <li>カーナビに<strong>「○○○宿泊施設」</strong>または住所<strong>「ソウル市○○区○○洞123-45」</strong>と入力してください</li>
+                    <li>宿泊施設前の駐車場をご利用いただけます（1泊○○ウォン）</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <p>お問い合わせ: +82-10-1234-5678 (宿泊施設管理者)</p>
+            </div>
+        </div>
+        
+        <!-- Chinese Content -->
+        <div class="language-content" id="content-zh">
+            <h1>如何找到我们的住宿</h1>
+            
+            <div class="directions">
+                <h2>乘坐公共交通</h2>
+                <ul>
+                    <li>地铁: 从<strong>○○站</strong>○号出口步行5分钟</li>
+                    <li>公交车: 在<strong>○○公交站</strong>下车后步行3分钟（公交车号: ○○、○○）</li>
+                </ul>
+            </div>
+            
+            <div class="directions">
+                <h2>自驾车</h2>
+                <ul>
+                    <li>在导航仪中输入<strong>"○○○住宿"</strong>或地址<strong>"首尔市○○区○○洞123-45"</strong></li>
+                    <li>可在住宿前方停车场停车（每晚○○韩元）</li>
+                </ul>
+            </div>
+            
+            <div class="contact">
+                <p>咨询电话: +82-10-1234-5678 (住宿管理员)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 언어 선택 기능
+        document.querySelectorAll('.language-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // 활성 버튼 상태 변경
+                document.querySelectorAll('.language-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // 언어 콘텐츠 표시 변경
+                const lang = this.getAttribute('data-lang');
+                document.querySelectorAll('.language-content').forEach(content => {
+                    content.classList.remove('active');
+                });
+                document.getElementById(`content-${lang}`).classList.add('active');
+            });
+        });
+
+        function initMap() {
+            // 숙소 위치 좌표 (이 부분을 실제 숙소 좌표로 변경하세요)
+            const accommodationLocation = { lat: 37.5665, lng: 126.9780 }; // 서울 시청 좌표 (예시)
+            
+            // 지도 생성
+            const map = new google.maps.Map(document.getElementById("map"), {
+                center: accommodationLocation,
+                zoom: 16,
+                mapTypeControl: false,
+                streetViewControl: false,
+                fullscreenControl: true,
+            });
+            
+            // 숙소 위치에 마커 추가
+            const marker = new google.maps.Marker({
+                position: accommodationLocation,
+                map: map,
+                title: "Accommodation Location",
+                animation: google.maps.Animation.DROP
+            });
+            
+            // 정보 창에 다국어 지원
+            const infoContents = {
+                en: "<strong>Accommodation Name</strong><br>123-45 ○○-dong, ○○-gu, Seoul<br>Check-in: 3:00 PM - 10:00 PM",
+                ko: "<strong>숙소 이름</strong><br>서울시 ○○구 ○○동 123-45<br>체크인: 오후 3시 ~ 오후 10시",
+                ja: "<strong>宿泊施設名</strong><br>ソウル市○○区○○洞123-45<br>チェックイン: 午後3時～午後10時",
+                zh: "<strong>住宿名称</strong><br>首尔市○○区○○洞123-45<br>入住时间: 下午3点 - 下午10点"
+            };
+            
+            // 기본 언어로 정보 창 생성 (영어)
+            let currentInfoContent = infoContents.en;
+            
+            const infoWindow = new google.maps.InfoWindow({
+                content: currentInfoContent
+            });
+            
+            // 언어 변경 시 정보 창 내용도 변경
+            document.querySelectorAll('.language-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    currentInfoContent = infoContents[lang];
+                    
+                    // 정보 창이 열려있으면 내용 업데이트
+                    infoWindow.setContent(currentInfoContent);
+                });
+            });
+            
+            marker.addListener("click", () => {
+                infoWindow.open(map, marker);
+            });
+            
+            // 페이지 로드 시 정보 창 자동으로 열기
+            infoWindow.open(map, marker);
+        }
+    </script>
+    
+    <!-- Google Maps API 스크립트 로드 (YOUR_API_KEY 부분을 실제 API 키로 교체하세요) -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+    
+    <!-- 구글 번역 위젯 -->
+    <div id="google_translate_element" style="position: absolute; top: 20px; right: 20px;"></div>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'ar,de,en,es,fr,hi,id,it,ja,ko,ms,pt,ru,th,tr,vi,zh-CN,zh-TW',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
